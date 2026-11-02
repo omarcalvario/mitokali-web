@@ -282,6 +282,9 @@ html,body{min-width:360px}
 .contact-form .button.service-tile-cta{justify-self:start;margin-top:2px}
 @media(max-width:900px){.nav a.service-tile-cta{padding:0}}
 .service-tile::before,.service-tile::after{background:transparent!important;color:#f2691f!important}
+.service-tile-wide .service-tile-heading{grid-template-columns:minmax(0,1fr) auto;row-gap:12px}
+.service-tile-wide .service-tile-heading h3{grid-column:1/-1;grid-row:2;min-width:0;overflow-wrap:anywhere;text-align:left}
+.service-tile-wide .service-tile-heading span:last-child{grid-column:2;grid-row:1}
 .contact-section{background:#1b1b1b;color:#fff}
 .contact-section h2,.contact-section .contact-link{color:#fff}
 .contact-section .eyebrow{color:#ff9a58}
