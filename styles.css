@@ -212,7 +212,8 @@ html,body{min-width:360px}
 .services-story-intro h2{max-width:1000px;margin:0;font-family:var(--sans);font-size:clamp(36px,6.2vw,76px);font-weight:700;line-height:1.04;letter-spacing:-.055em;text-indent:clamp(0px,13vw,200px)}
 .services-story-intro>p:last-child{max-width:600px;margin:26px 0 0 auto;color:#555;font-size:clamp(16px,1.5vw,20px);line-height:1.5}
 .services-mosaic{display:grid;grid-template-columns:minmax(0,1fr);gap:24px;max-width:1160px;margin:0 auto}
-.service-tile{position:relative;display:flex;min-width:0;flex-direction:column;gap:18px;padding:clamp(16px,2.4vw,24px);border:1px solid #dedede;background:#fff}
+.service-tile{position:relative;display:flex;min-width:0;flex-direction:column;gap:18px;padding:clamp(16px,2.4vw,24px);border:1px solid #dedede;background:#fff;cursor:pointer}
+.service-tile:focus-visible{outline:3px solid #f97300;outline-offset:4px}
 .service-tile::before,.service-tile::after{position:absolute;z-index:1;display:grid;width:24px;height:24px;place-items:center;background:#fff;font:400 22px/1 var(--sans);content:"+"}
 .service-tile::before{top:-12px;left:-12px;color:#888}
 .service-tile::after{right:-12px;bottom:-12px;color:#f2691f}

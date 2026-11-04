@@ -115,6 +115,23 @@
   if (select && location.pathname.endsWith('/index.html')) select.innerHTML = '<option value="">Selecciona una opción</option><option>Mitokali Eventos</option><option>Mitokali Restaurante</option><option>Mitokali Food Truck</option><option>Mitokali Industrial</option><option>Menú Ejecutivo</option>';
   const serviceTiles = [...document.querySelectorAll('[data-service-card]')];
   if (serviceTiles.length) {
+    serviceTiles.forEach(tile => {
+      const destination = tile.querySelector('.service-tile-cta[href]');
+      const title = tile.querySelector('h3');
+      if (!destination) return;
+      tile.tabIndex = 0;
+      tile.setAttribute('role', 'link');
+      if (title) tile.setAttribute('aria-label', `Ver detalle: ${title.textContent.trim()}`);
+      tile.addEventListener('click', event => {
+        if (event.target.closest('a, button, input, select, textarea')) return;
+        window.location.href = destination.href;
+      });
+      tile.addEventListener('keydown', event => {
+        if (event.target !== tile || (event.key !== 'Enter' && event.key !== ' ')) return;
+        event.preventDefault();
+        window.location.href = destination.href;
+      });
+    });
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduceMotion || !('IntersectionObserver' in window)) {
       serviceTiles.forEach(tile => tile.classList.add('is-visible'));
