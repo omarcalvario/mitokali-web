@@ -16,9 +16,7 @@
   });
   document.querySelectorAll('[data-service]').forEach(link => link.addEventListener('click', () => { if (typeof window.gtag === 'function') window.gtag('event', 'click_service', { service: link.dataset.service, destination: link.href }); }));
   const pageHero = document.querySelector('.page-hero');
-  if (pageHero && location.pathname.includes('/eventos/')) pageHero.style.backgroundImage = "url('../imagenes-banner/Mitokali%20Eventos.jpg')";
-  const fallback = { 'mitokali_restaurante.png': 'mitokali%2520restaurante.png', 'banner_mitokali_foodtruck_.png': 'food%2520truck%2520cuadro.png', 'mitokali_industrial.png': 'thumbnail_industrial.png', 'mitokali_ejecutivo.png': 'thumbnail_logistica.png' };
-  Object.entries(fallback).forEach(([missing, replacement]) => { if (pageHero?.style.backgroundImage.includes(missing)) pageHero.style.backgroundImage = `url('../downloaded_site/mitokali.com/images/tarjetas/${replacement}')`; });
+  if (pageHero && location.pathname.includes('/eventos/')) pageHero.style.backgroundImage = "url('../imagenes-banner/Mitokali%20Eventos.webp')";
   const form = document.querySelector('[data-contact-form]');
   form?.addEventListener('submit', event => {
     event.preventDefault();

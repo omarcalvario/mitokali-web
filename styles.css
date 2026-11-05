@@ -25,7 +25,7 @@
 .home-hero{background-image:none!important}.brand{display:inline-flex;align-items:center}.brand img{display:block;width:164px;height:auto}
 
 /* Figma hero carousel: the track advances from right to left. */
- .figma-hero:before{width:25.4244%;background:#f2691f url('assets/Frame 4.jpg') center/cover no-repeat}
+ .figma-hero:before{width:25.4244%;background:#f2691f url('assets/Frame 4.webp') center/cover no-repeat}
 .figma-hero:after{display:none}
 .figma-hero-media{inset:0 0 0 25.4244%;overflow:hidden;background:none}
 .figma-hero-track{position:relative;height:100%;width:100%}
@@ -122,22 +122,22 @@ body > header.header{position:sticky;top:0;z-index:20}
 
 /* Food Trucks hero: show the local banner without any overlay. */
 .food-trucks-hero::before{display:none!important;content:none!important}
-.food-trucks-hero{background-image:url('food-trucks/banner_mitokali_foodtruck_.png')!important;background-position:center!important;background-size:cover!important;background-repeat:no-repeat!important;background-color:transparent!important}
+.food-trucks-hero{background-image:url('food-trucks/banner_mitokali_foodtruck_.webp')!important;background-position:center!important;background-size:cover!important;background-repeat:no-repeat!important;background-color:transparent!important}
 
 
 /* Eventos hero: use its section banner without a tint overlay. */
 .eventos-hero::before{display:none!important;content:none!important}
-.eventos-hero{background-image:url('eventos/banner_mitokali_eventos.png')!important;background-position:center!important;background-size:cover!important;background-repeat:no-repeat!important;background-color:transparent!important}
+.eventos-hero{background-image:url('eventos/banner_mitokali_eventos.webp')!important;background-position:center!important;background-size:cover!important;background-repeat:no-repeat!important;background-color:transparent!important}
 
 
 /* Industrial hero: show the local banner without a blue overlay. */
 .industrial-hero::before{display:none!important;content:none!important}
-.industrial-hero{background-image:url('industrial/mitokali_industrial.png')!important;background-position:center!important;background-size:cover!important;background-repeat:no-repeat!important;background-color:transparent!important}
+.industrial-hero{background-image:url('industrial/mitokali_industrial.webp')!important;background-position:center!important;background-size:cover!important;background-repeat:no-repeat!important;background-color:transparent!important}
 
 
 /* Menú Ejecutivo hero: show the local banner without a blue overlay. */
 .menu-ejecutivo-hero::before{content:""!important;display:block!important;position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(0,0,0,.78) 0%,rgba(0,0,0,.42) 38%,rgba(0,0,0,0) 78%)!important;pointer-events:none}
-.menu-ejecutivo-hero{background-image:url('menu-ejecutivo/mitokali_ejecutivo.png')!important;background-position:center!important;background-size:cover!important;background-repeat:no-repeat!important;background-color:transparent!important}
+.menu-ejecutivo-hero{background-image:url('menu-ejecutivo/mitokali_ejecutivo.webp')!important;background-position:center!important;background-size:cover!important;background-repeat:no-repeat!important;background-color:transparent!important}
 
 .menu-ejecutivo-hero .container{position:relative;z-index:1}
 
